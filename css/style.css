@@ -341,10 +341,11 @@ li {
 .founders_tittle h1{
     font-family: "open sans", serif;
     color: #FFF;
-    font-size: 30px;
+    font-size: 60px;
     display: flex;
     width: 100%;
-    margin-left: 5%;
+    justify-content: center;
+    margin-top: 10%;
 }
 .follow {
     margin-top: 25%;
