@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     width: 100%;
@@ -8,8 +9,7 @@ body{
 }
 header {
     background-color: #FFF;
-    display: flex;
-    max-height: 22%;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -35,7 +35,7 @@ h2 {
     font-size: inherit;
 }
 .information{
-    display: flex;
+    display: inline-flex;
     margin-right: 10px;
     height: 22%;
     align-items: center;
@@ -188,8 +188,6 @@ nav {
     margin-top: 10%;
     font-family: "open sans", serif;
     color: #FFF;
-}
-.text1 h3{
     font-style: normal;
     font-weight: lighter;
 }
@@ -398,4 +396,64 @@ li {
 }
 .contact_us h1 {
     margin-bottom: 2%;
+}
+.sub_menu li{
+    list-style: none;
+}
+.sub_menu ul{
+    display: none;
+}
+.information2:hover, .information1:hover, .information4:hover, .information5:hover, .information3:hover{
+    background-color: rgba(0, 158, 172, 0.8);
+    transition: 0.5s;
+}
+.information3:hover .sub_menu{
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 158, 172, 0.8);
+    transition: 0.2s;
+    margin-top: 8.4%;
+    height: 10%;
+    z-index: 2;
+    padding: 1%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.information3:hover {
+    background-color: rgba(0, 158, 172, 0.8);
+}
+.information3 h2:hover{
+    padding-left: 2px;
+}
+header .information .information3:hover .sub_menu ul{
+    display: block;
+}
+.text1 h1{
+    line-height: 70px;
+}
+k {
+    padding-left: 50px;
+}
+.veic, .dados {
+    margin-top: 10%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.veic h2, .dados h2 {
+    font-family: "open sans", serif;
+    color: #FFF;
+    font-size: 70px;
+    text-align: center;
+}
+.veic h3, .dados h3{
+    margin-top: 10%;
+    font-family: "open sans", serif;
+    color: #FFF;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: justify;
 }
